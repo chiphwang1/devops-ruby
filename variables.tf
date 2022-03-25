@@ -2,21 +2,21 @@
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
 variable "tenancy_ocid" {
-  default = "ocid1.tenancy.oc1..aaaaaaaajznex5attydtrmrgudwayqu7kn4krasw2ct4h4pwz7nwbfxoyd4q"
+  default = ""
 }
 
 # chip-devops
 variable "compartment_ocid" {
-  default ="ocid1.compartment.oc1..aaaaaaaajyowfbrbhj4rzpzx26hbmzlegcn7mhfgctmqxvwasyeeylqlchda"
+  default =""
 }
 variable "user_ocid" {
-  default = "ocid1.user.oc1..aaaaaaaao7mct2dugqn6ymsm2mncrthv2q2zcbh7emcgwmckswmaiboiargq"
+  default = ""
 }
 variable "fingerprint" {
-  default ="5a:b6:9a:f1:4b:47:43:53:e5:a2:38:f9:5d:5d:e7:39"
+  default =""
 }
 variable "private_key_path" {
-  default ="/Users/chiphwan/.oci/chip_private.pem"
+  default =""
 }
 variable "region" {
   default = "us-ashburn-1"
@@ -28,10 +28,10 @@ variable "app_name" {
 }
 
 variable "oci_username" {
-  default = "ociobenablement/identitycloudservice/chiping.hwang@oracle.com"
+  default = ""
 }
 variable "oci_user_authtoken" {
-  default ="ZgGWOo1I<UhLo[]W8:(."
+  default =""
 }
 
 variable "release" {
