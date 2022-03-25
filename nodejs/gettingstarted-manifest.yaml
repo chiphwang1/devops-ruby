@@ -6,22 +6,22 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-gettingstarted-deployment
+  name: ruby-demo-gettingstarted-deployment
   namespace: ${namespace}
 spec:
   selector:
     matchLabels:
-      app: node-gettingstarted
+      app: ruby-demo-gettingstarted
   replicas: 3
   template:
     metadata:
       labels:
-        app: node-gettingstarted
+        app: ruby-demo-gettingstarted
     spec:
       containers:
-        - name: node-gettingstarted
+        - name: ruby-demo
           # enter the path to your image, be sure to include the correct region prefix
-          image: iad.ocir.io/ociobenablement/node-express-getting-starter:${BUILDRUN_HASH}
+          image: iad.ocir.io/ociobenablement/ruby-demo:${BUILDRUN_HASH}
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -41,4 +41,4 @@ spec:
       protocol: TCP
       targetPort: 3000
   selector:
-    app: node-gettingstarted
+    app: ruby-demo-gettingstarted
